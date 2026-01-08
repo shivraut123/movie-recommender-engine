@@ -39,6 +39,7 @@ graph LR
     D -- Return Top 5 Matches --> C
     C -- JSON Response --> B
     B -- Render UI --> A
+```
 
 ## 🚀 How to Run Locally
 
