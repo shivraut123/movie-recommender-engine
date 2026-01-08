@@ -28,13 +28,12 @@ This project solves the **"Cold Start Problem"** in recommendation systems. Inst
 
 ## 🏗️ System Architecture
 The application follows a decoupled client-server architecture:
-
 ```mermaid
 graph LR
-    A[User / Browser] -- HTTP Request --> B[Frontend (React)]
-    B -- Async API Call (Axios) --> C[Backend (FastAPI)]
-    C -- Query --> D[Recommendation Engine]
-    D -- Read Data --> E[(MovieLens Dataset)]
+    A["User / Browser"] -- HTTP Request --> B["Frontend (React)"]
+    B -- "Async API Call (Axios)" --> C["Backend (FastAPI)"]
+    C -- Query --> D["Recommendation Engine"]
+    D -- Read Data --> E[("MovieLens Dataset")]
     D -- Compute TF-IDF --> D
     D -- Return Top 5 Matches --> C
     C -- JSON Response --> B
