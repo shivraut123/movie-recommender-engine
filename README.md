@@ -28,6 +28,7 @@ This project solves the **"Cold Start Problem"** in recommendation systems. Inst
 
 ## 🏗️ System Architecture
 The application follows a decoupled client-server architecture:
+
 ```mermaid
 graph LR
     A["User / Browser"] -- HTTP Request --> B["Frontend (React)"]
